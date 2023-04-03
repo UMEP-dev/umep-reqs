@@ -5,7 +5,7 @@ from pathlib import Path
 def get_version():
     try:
         from setuptools_scm import get_version
-        return get_version()
+        return get_version(local_scheme="no-local-version")
     except ImportError:
         print("setuptools_scm not installed, using default version '0.0'")
         return "0.0"
