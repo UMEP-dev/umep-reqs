@@ -10,7 +10,7 @@ def get_version():
         print("setuptools_scm not installed, using default version '0.0'")
         return "0.0"
 
-with open(Path(__file__).parent / 'README.md', 'r', encoding='utf-8') as f:
+with open(Path(__file__).parent.parent / 'README.md', 'r', encoding='utf-8') as f:
     long_description = f.read()
 
 setup(
