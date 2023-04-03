@@ -1,4 +1,5 @@
 from setuptools import setup, find_packages
+from pathlib import Path
 
 
 def get_version():
@@ -9,6 +10,9 @@ def get_version():
         print("setuptools_scm not installed, using default version '0.0'")
         return "0.0"
 
+with open(Path(__file__).parent / 'README.md', 'r', encoding='utf-8') as f:
+    long_description = f.read()
+
 setup(
   name="umep-reqs",
   version=get_version(), # Use setuptools_scm to get version from git tags.
@@ -18,4 +22,6 @@ setup(
     #   "dependency2==y.y.y" # Replace with actual dependency and version number.
   ],
   author="UMEP dev team",
+  long_description=long_description,
+  long_description_content_type='text/markdown',
 )
