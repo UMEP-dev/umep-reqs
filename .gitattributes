@@ -1,0 +1,13 @@
+# Include these files in git archives (used by setuptools_scm).
+.gitattributes export-ignore
+.gitignore export-ignore
+
+# Exclude other unnecessary files from git archives.
+.github/ export-ignore
+*.pyc export-ignore
+__pycache__/ export-ignore
+dist/ export-ignore
+build/ export-ignore
+*.egg-info/ export-ignore
+venv/ export_ignore
+.env* exclude
