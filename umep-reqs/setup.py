@@ -28,7 +28,9 @@ setup(
     packages=find_packages(),
     install_requires=[
         "supy==2022.9.22",  # Replace with actual dependency and version number.
-        #   "dependency2==y.y.y" # Replace with actual dependency and version number.
+        "numba",
+        "jaydebeapi",
+        "netCDF4", #   "dependency2==y.y.y" 
     ],
     author="UMEP dev team",
     long_description=long_description,
