@@ -27,7 +27,7 @@ setup(
     version=get_version(),  # Use setuptools_scm to get version from git tags.
     packages=find_packages(),
     install_requires=[
-        "supy==2022.9.22",  # Replace with actual dependency and version number.
+        "supy==2023.4.14.dev0",  # Replace with actual dependency and version number.
         "numba==0.56.4",
         "jaydebeapi==1.2.3",
         "netCDF4", #   "dependency2==y.y.y" 
