@@ -28,7 +28,7 @@ setup(
     packages=find_packages(),
     install_requires=[
         "supy==2023.5.26.dev0",  # Replace with actual dependency and version number.
-        "numba==0.56.4",
+        "numba",
         "jaydebeapi==1.2.3",
         "netCDF4", #   "dependency2==y.y.y" 
     ],
