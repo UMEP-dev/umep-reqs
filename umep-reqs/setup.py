@@ -30,7 +30,9 @@ setup(
         "supy==2024.5.24.dev",  # Replace with actual dependency and version number.
         "numba==0.59.0",
         "jaydebeapi==1.2.3",
-        "netCDF4", #   "dependency2==y.y.y" 
+        "netCDF4",
+        "openpyxl",
+        "target-py",        #   "dependency2==y.y.y" 
     ],
     author="UMEP dev team",
     long_description=long_description,
