@@ -32,6 +32,7 @@ setup(
         "jaydebeapi==1.2.3",
         "netCDF4",
         "openpyxl",
+        "rioxarray",
         "target-py",        #   "dependency2==y.y.y" 
     ],
     author="UMEP dev team",
