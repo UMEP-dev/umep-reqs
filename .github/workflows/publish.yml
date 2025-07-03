@@ -24,8 +24,17 @@ jobs:
         run: |
           python -m pip install --upgrade pip setuptools wheel twine setuptools_scm
           cd umep-reqs && python setup.py sdist bdist_wheel
+          ls -la dist/
+
+      - name: Verify build artifacts
+        run: |
+          echo "Checking build artifacts..."
+          ls -la umep-reqs/dist/
+          echo "Package contents:"
+          tar -tzf umep-reqs/dist/*.tar.gz | head -20
 
       - name: Publish distribution to Test PyPI
+        if: github.event_name == 'push' && github.ref == 'refs/heads/main'
         uses: pypa/gh-action-pypi-publish@release/v1.5
         with:
             packages_dir: umep-reqs/dist/
