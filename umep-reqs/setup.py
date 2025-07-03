@@ -27,12 +27,13 @@ setup(
     version=get_version(),  # Use setuptools_scm to get version from git tags.
     packages=find_packages(),
     install_requires=[
-        "supy==2024.5.24.dev",  # Replace with actual dependency and version number.
+        "supy==2025.6.2.dev0",  # Replace with actual dependency and version number.
         "numba==0.59.0",
         "jaydebeapi==1.2.3",
         "netCDF4",
         "openpyxl",
         "rioxarray",
+        "pydantic",
         "target-py",        #   "dependency2==y.y.y" 
     ],
     author="UMEP dev team",
