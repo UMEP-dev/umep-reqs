@@ -8,7 +8,6 @@ description = "UMEP requirements package"
 authors = [{ name = "UMEP dev team" }]
 dependencies = [
     "timezonefinder==6.5.9",
-    "supy==2025.7.23.dev0",
     "numba==0.59.0",
     "jaydebeapi==1.2.3",
     "netCDF4",
@@ -26,3 +25,5 @@ packages = ["umep-reqs"]
 
 [tool.setuptools_scm]
 local_scheme = "no-local-version"
+    
+# "supy==2025.7.23.dev0", testing without supy
