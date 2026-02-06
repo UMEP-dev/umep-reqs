@@ -7,15 +7,15 @@ name = "umep-reqs"
 description = "UMEP requirements package"
 authors = [{ name = "UMEP dev team" }]
 dependencies = [
-    "timezonefinder==6.5.9",
-    "supy==2025.7.9.dev0",
+    "supy==2026.1.28rc1",
     "numba==0.59.0",
     "jaydebeapi==1.2.3",
     "netCDF4",
     "openpyxl",
-    "rioxarray",
-    "pydantic",
-    "target-py"
+    "rasterio==1.4.3"
+    "rioxarray==0.19",
+    "target-py",
+    "uwg"
 ]
 readme = "README.md"
 requires-python = ">=3.7"
