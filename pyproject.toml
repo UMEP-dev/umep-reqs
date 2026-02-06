@@ -12,7 +12,7 @@ dependencies = [
     "jaydebeapi==1.2.3",
     "netCDF4",
     "openpyxl",
-    "rasterio==1.4.3"
+    "rasterio==1.4.3",
     "rioxarray==0.19",
     "target-py",
     "uwg"
