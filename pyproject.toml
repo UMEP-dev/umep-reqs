@@ -7,7 +7,8 @@ name = "umep-reqs"
 description = "UMEP requirements package"
 authors = [{ name = "UMEP dev team" }]
 dependencies = [
-    "supy==2026.1.28rc1",
+    "supy==2026.1.28",
+    "pyarrow<23",  # temporary: supy 2026.1.28 _load.py incompatible with pyarrow 23 (UMEP-dev/SUEWS#1252)
     "numba==0.59.0",
     "jaydebeapi==1.2.3",
     "netCDF4",
