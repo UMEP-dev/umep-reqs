@@ -7,7 +7,6 @@ name = "umep-reqs"
 description = "UMEP requirements package"
 authors = [{ name = "UMEP dev team" }]
 dependencies = [
-    "supy==2026.1.28rc1",
     "numba==0.59.0",
     "jaydebeapi==1.2.3",
     "netCDF4",
@@ -21,10 +20,12 @@ readme = "README.md"
 requires-python = ">=3.7"
 dynamic = ["version"]
 
+[project.optional-dependencies]
+qgis3 = ["supy==2026.4.3rc1"]
+qgis4 = ["supy==2026.4.3"]
+
 [tool.setuptools]
 packages = ["umep-reqs"]
 
 [tool.setuptools_scm]
 local_scheme = "no-local-version"
-    
-# "supy==2025.7.23.dev0", testing without supy
