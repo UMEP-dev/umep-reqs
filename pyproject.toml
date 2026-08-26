@@ -10,7 +10,7 @@ dependencies = [
     "jaydebeapi==1.2.3",
     "netCDF4",
     "openpyxl",
-    "target-py",
+    "target-py==0.1.1",
     "uwg"
 ]
 
@@ -20,13 +20,13 @@ dynamic = ["version"]
 
 [project.optional-dependencies]
 numpy1 = [
-    "supy==2026.4.3rc1",
+    "supy==2026.6.5rc1",
     "numba==0.59.0",
     "rasterio==1.4.3",
     "rioxarray==0.19"
 ]
 numpy2 = [
-    "supy==2026.4.3",
+    "supy==2026.6.5",
     "numba==0.64",
     "rasterio==1.5",
     "rioxarray==0.19"
