@@ -10,7 +10,7 @@ dependencies = [
     "jaydebeapi==1.2.3",
     "netCDF4",
     "openpyxl",
-    "target-py==0.1.1",
+    "target-py>=0.2",
     "uwg"
 ]
 
